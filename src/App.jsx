@@ -7,7 +7,6 @@ function App() {
 
   // URL of your Azure Function
   const azureFunctionUrl = 'https://openaiimage5345.azurewebsites.net/api/imagegeneratorAI';
-  console.log(promptInput)
 
   // Function to handle form submission
   const handleSubmit = async (e) => {
@@ -61,8 +60,8 @@ function App() {
                     value={promptInput}
                     onChange={(e) => setPromptInput(e.target.value)}
                 />
-            {/* Button to submit the question */}
-            <button className="main-section-btn">Generate Image</button>
+                {/* Button to submit the question */}
+                <button className="main-section-btn">Generate Image</button>
             </form>
             {/* Display the response from the Azure Function */}
             <div className="response">
